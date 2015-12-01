@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!--Title slide-->
+				<section>
+						<h1 class="title" style="display: inline;"></h1>
+						<p class="subtitle" style="display: inline;"></p>
+				</section>
+
+				<!--Summary of general situation-->
+				<section>
+					<section><h1>The Situation</h1></section>
+					<section>
+						<h2>Facts:</h2><br/>
+						<ul>
+							<li class="fragment fade-in">Jeff Lebowski assigned to help Nagelbett install equipment for Treehorn Inc.</li>
+							<li class="fragment fade-in">Nagelbett's equiment arrives late...only 8/10 installations complete.</li>
+							<li class="fragment fade-in">Walter Sobchak offers to finish remaining installations.</li>
+							<li class="fragment fade-in">Recent accidents due to improper installation prompted Nagelbett to send engineers to supervise.</li>
+							<li class="fragment fade-in">Potential for serious injury.</li>
+						</ul>
+					</section>
+				</section>
+
+				<!--Scenario A: Jeff wants to go on vacation-->
+				<section>
+					<section><h1>Scenario A</h1></section>
+					<section>
+						<h2>Facts:</h2><br/>
+						<ul>
+							<li class="fragment fade-in">Installations supposed to be completed on the 12th, vacation on the 13th.</li>
+							<li class="fragment fade-in">Jeff already put down money for the cabin.</li>
+							<li class="fragment fade-in">Chief engineer Donny Kerabatsos cannot <i>officially</i> approve Jeff's leaving before job is complete.</li>
+							<li class="fragment fade-in">Jeff has no doubt Walter is capable of finishing the installations.</li>
+							<li class="fragment fade-in">Nagelbett is not required by law nor contract to supervise.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Ethical Issues:</h2><br/>
+						<ul>
+							<li class="fragment fade-in">Duty ethics - has a duty to complete his job in order to avoid risk of injury.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Possible Solutions:</h2><br/>
+					</section>
+					<section>
+						<h2>Professional Recommendation:</h2><br/>
+					</section>
+				</section>
+
+				<!--Scenario B: Jeff has another job to do-->
+				<section>
+					<section><h1>Scenario B</h1></section>
+					<section>
+						<h2>Facts:</h2><br/>
+						<ul>
+							<li class="fragment fade-in">Jeff has contractual deadline with other major customer who is insistent on getting the work done on time.</li>
+							<li class="fragment fade-in">Jeff tells Walter he will stop by on his way back to check, though he can't check everything.</li>
+							<li class="fragment fade-in">Walter must sign papers verifying that Jeff supervised the installations.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Ethical Issues:</h2><br/>
+						<ul>
+							<li class="fragment fade-in">Duty ethics - has a duty to complete his job in order to avoid risk of injury.</li>
+							<li class="fragment fade-in">Legal - has binding contract with major client.</li>
+							<li class="fragment fade-in">Legal - must have Walter sign contract.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Possible Solutions:</h2><br/>
+					</section>
+					<section>
+						<h2>Professional Recommendation:</h2><br/>
+					</section>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script src="typed.min.js"></script>
+
+		<script>
+			$(function(){
+				$(".typed-cursor").css("fontSize", "3.77em !important");
+				$(".title").typed({
+					strings: ["Project Sapphire ^3000"],
+					typeSpeed:20,
+					callback: function() {
+						$(".typed-cursor").css("display", "none").css("fontSize", "14px !important");
+						$(".subtitle").typed({
+							strings: ["<br>Natasha Issayeva <br>Casey Barbello <br>Kelvin Yang <br>Wei Dai <br>Brian Urban"],
+							typeSpeed:20
+						});
+					}
+				});
+			});
+		</script>
+
+		<style>
+			.typed-cursor{
+				opacity: 1;
+				-webkit-animation: blink 0.9s infinite;
+				-moz-animation: blink 0.9s infinite;
+				animation: blink 0.9s infinite;
+			}
+			@keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			@-webkit-keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			@-moz-keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			</style>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
